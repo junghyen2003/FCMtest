@@ -4,6 +4,7 @@
   <br><br>
   <li>FCM 프로젝트 콘솔 : https://console.firebase.google.com/</li>
   <li>FCM 문서 : https://firebase.google.com/docs/guides/?authuser=0</li>
+  <li>FCM & Spring Boot : http://javasampleapproach.com/spring-framework/spring-boot/firebase-cloud-messaging-server-spring-to-push-notification-example-spring-boot </li>
 </div>
 <br><br>
 <div>
