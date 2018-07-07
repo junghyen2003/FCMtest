@@ -15,6 +15,6 @@
 </div>
 <br>
 <div>
-  <h3><label>* Push Message 구조</label></h3>
+  <h3><label>* Push Message 구조(Android)</label></h3>
   <img src="https://raw.githubusercontent.com/seochangwook/FCMtest/master/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202018-07-07%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%2011.55.44.png" width="600" height="200">
 </div>
