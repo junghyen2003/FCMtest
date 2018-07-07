@@ -2,8 +2,8 @@
 <div>
   <label>* FCM 참조 사이트</label>
   <br>
-  <ui>FCM 프로젝트 콘솔 : https://console.firebase.google.com/</ui>
-  <ui>FCM 문서 : https://firebase.google.com/docs/guides/?authuser=0</ui>
+  <ul>FCM 프로젝트 콘솔 : https://console.firebase.google.com/</ul>
+  <ul>FCM 문서 : https://firebase.google.com/docs/guides/?authuser=0</ul>
 </div>
 <br><br>
 <div>
