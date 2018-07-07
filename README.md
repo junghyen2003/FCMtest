@@ -1,6 +1,6 @@
 # FCMTestApp
 <div>
-  <h1><label>* FCM 참조 사이트</label></h1>
+  <h3><label>* FCM 참조 사이트</label></h3>
   <br><br>
   <li>FCM 프로젝트 콘솔 : https://console.firebase.google.com/</li>
   <li>FCM 문서 : https://firebase.google.com/docs/guides/?authuser=0</li>
@@ -8,7 +8,7 @@
 </div>
 <br><br>
 <div>
-  <h1><label>* FCM Token 저장</label></h1>
+  <h3><label>* FCM Token 저장</label></h3>
   <br><br>
   <li>1. 처음 App을 설치 시 토큰값 부여(처음 실행 시 에만 부여)</li>
   <li>2. 부여된 토큰값을 서버로 전송</li>
