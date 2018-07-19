@@ -22,4 +22,5 @@
 <div>
   <h3><label>* Android Oreo Version Update</label></h3>
   <li>Alarm Channel</li>
+  <img src="https://raw.githubusercontent.com/seochangwook/FCMtest/master/oreoimage.png" width="170" height="150">
 </div>
