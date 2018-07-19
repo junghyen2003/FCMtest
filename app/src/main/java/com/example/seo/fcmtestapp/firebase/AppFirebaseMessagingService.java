@@ -1,11 +1,17 @@
 package com.example.seo.fcmtestapp.firebase;
 
+import android.annotation.SuppressLint;
+import android.app.Notification;
+import android.app.NotificationChannel;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Color;
 import android.media.RingtoneManager;
 import android.net.Uri;
+import android.os.Build;
+import android.support.annotation.RequiresApi;
 import android.support.v4.app.NotificationCompat;
 import android.util.Log;
 
@@ -43,17 +49,16 @@ public class AppFirebaseMessagingService extends com.google.firebase.messaging.F
         PendingIntent contentIntent = PendingIntent.getActivity(this, 0, intent, PendingIntent.FLAG_ONE_SHOT);
         Uri defaultSoundUri = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
 
-        NotificationCompat.Builder notificationBuilder = new NotificationCompat.Builder(this)
-                .setSmallIcon(R.mipmap.ic_launcher)
+        //알림설정(채널적용)//
+        Notification.Builder notificationBuilder = new Notification.Builder(this, PropertyManager.getInstance().getChannelId())
                 .setContentTitle(data.get("title"))
                 .setContentText(data.get("msg"))
+                .setSmallIcon(R.mipmap.ic_launcher)
                 .setAutoCancel(true)
                 .setSound(defaultSoundUri)
                 .setContentIntent(contentIntent);
 
-        NotificationManager notificationManager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
-
-        notificationManager.notify(0 /* ID of notification */, notificationBuilder.build());
+        PropertyManager.getNotificationManager().notify(0 , notificationBuilder.build());
     }
 
     public void set_alarm_badge() {
