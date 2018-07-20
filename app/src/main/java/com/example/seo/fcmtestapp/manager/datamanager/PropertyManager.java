@@ -1,15 +1,12 @@
 package com.example.seo.fcmtestapp.manager.datamanager;
 
-import android.annotation.SuppressLint;
 import android.app.Notification;
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.graphics.Color;
-import android.os.Build;
 import android.preference.PreferenceManager;
-import android.support.annotation.RequiresApi;
 import android.util.Log;
 
 import com.example.seo.fcmtestapp.manager.MyApplication;
