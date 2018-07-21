@@ -41,12 +41,12 @@ public class MainActivity extends AppCompatActivity {
         int permissionCheck = ContextCompat.checkSelfPermission(this, Manifest.permission.READ_CONTACTS);
         if (permissionCheck != PackageManager.PERMISSION_GRANTED) {
             if (ActivityCompat.shouldShowRequestPermissionRationale(this, Manifest.permission.READ_CONTACTS)) {
-                showExplanation("Permission Needed", "Rationale", Manifest.permission.READ_CONTACTS, REQUEST_PERMISSION_CONTACTS); //권한필요 설명//
+                showExplanation("요청 권한이 필요합니다.", "[주소록] 접근권한이 있어야지 서비스가 가능합니다.", Manifest.permission.READ_CONTACTS, REQUEST_PERMISSION_CONTACTS); //권한필요 설명//
             } else {
                 requestPermission(Manifest.permission.READ_CONTACTS, REQUEST_PERMISSION_CONTACTS);
             }
         } else {
-            Toast.makeText(MainActivity.this, "Permission (already) Granted!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(MainActivity.this, "요청권한이 이미 승인되었습니다. 서비스를 계속합니다.", Toast.LENGTH_SHORT).show();
 
             //이후 작업진행//
         }
@@ -57,9 +57,9 @@ public class MainActivity extends AppCompatActivity {
         switch (requestCode) {
             case REQUEST_PERMISSION_CONTACTS:
                 if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-                    Toast.makeText(MainActivity.this, "Permission Granted!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainActivity.this, "권한 승인", Toast.LENGTH_SHORT).show();
                 } else {
-                    Toast.makeText(MainActivity.this, "Permission Denied!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainActivity.this, "권한 거부로 정상적인 서비스가 불가합니다. 서비스를 이용하실려면 권한을 승인해야 합니다.", Toast.LENGTH_SHORT).show();
                 }
         }
     }
